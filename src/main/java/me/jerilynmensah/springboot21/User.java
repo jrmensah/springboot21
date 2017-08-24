@@ -30,6 +30,18 @@ public class User {
     @Column(name ="username")
     private String username;
 
+    public User(String email, String password, String firstName, String lastName, boolean enabled, String username) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.enabled = enabled;
+        this.username = username;
+    }
+
+    public User() {
+    }
+
     public long getId() {
         return id;
     }
